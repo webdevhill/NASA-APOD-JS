@@ -73,7 +73,6 @@ body {
 
 /* Images Container */
 .images-container {
-  width: 800px;
   margin: auto;
   margin-top: 50px;
 }
@@ -131,12 +130,17 @@ body {
     text-align: justify;
 }
 
-  /* .images-container {
-    width: 100%;
-  } */
+  .images-container {
+    max-width: 80%;
+    margin: auto;
+  }
 
-    .card-title {
+  .card-title {
     font-size: 20px;
+  }
+
+  .card-img-top {
+    ma
   }
 
   /* .save-confirmed{
