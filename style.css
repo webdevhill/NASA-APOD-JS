@@ -4,8 +4,7 @@ html {
 
 body {
   margin: 0;
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background:  #F5F5F5;
   overflow-x: hidden;
   font-family: Verdana, sans-serif;
   font-size: 1rem;
@@ -24,8 +23,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 
 /* Loader */
 .loader {
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background:  #F5F5F5;
   height: 100vh;
   width: 100vw;
   margin: auto;
@@ -52,8 +50,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 }
 
 .background {
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background:  #F5F5F5;
   position: fixed;
   right: 0;
   width: 100%;
