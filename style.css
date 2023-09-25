@@ -1,10 +1,12 @@
-html {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
-  background:  #F5F5F5;
+  background:  hsl(216, 65%, 11%);
   overflow-x: hidden;
   font-family: Verdana, sans-serif;
   font-size: 1rem;
@@ -19,11 +21,12 @@ body {
   justify-content: center;
   margin-top: 5px;
   margin-bottom: 25px;
+  background: hsl(216, 65%, 11%) ;
 }
 
 /* Loader */
 .loader {
-  background:  #F5F5F5;
+  background:  hsl(216, 65%, 11%);
   height: 100vh;
   width: 100vw;
   margin: auto;
@@ -42,6 +45,8 @@ body {
 .navigation-container {
   position: fixed;
   top: 0;
+  margin: 2rem;
+  z-index: 999;
 }
 
 .navigation-items {
@@ -50,41 +55,60 @@ body {
 }
 
 .background {
-  background:  #F5F5F5;
+  background:  hsl(216, 65%, 11%);
   position: fixed;
+  top: 0;
   right: 0;
   width: 100%;
-  height: 60px;
+  height: 100px;
   z-index: -10;
 }
 
 .clickable {
-  color: #1e90ff;
+  color: hsl(226, 70%, 88%);
   cursor: pointer;
   user-select: none;
   transition: all 0.3s ease-in;
 }
 
 .clickable:hover {
-  color: rgb(0, 221, 255);
+  color: #1e90ff;
   font-size: 125%;
 }
 
+#resultsNav > h3:nth-child(2) {
+  color: #1e90ff;
+}
 
 /* Images Container */
 .images-container {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.images-container:first-child {
+  margin-top: 5rem;
+}
+
+body {
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.card-title {
+  font-size: 20px;
 }
 
 .card {
-  background: white;
+  background: hsl(228, 20%, 90%);
   margin: 10px 10px 20px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -105,6 +129,10 @@ body {
   font-size: 24px;
 }
 
+p.clickable {
+  color: #1e90ff;
+}
+
 /* Save Confirmation */
 .save-confirmed {
   background: white;
@@ -122,32 +150,6 @@ body {
   display: none;
 }
 
-/* Large Smartphone (Vertical) */
-@media screen and (max-width: 800px) {
-  body {
-    line-height: 1.4rem;
-    font-size: 0.9rem;
-    text-align: justify;
-}
-
-  .images-container {
-    max-width: 80%;
-    margin: auto;
-  }
-
-  .card-title {
-    font-size: 20px;
-  }
-
-  .card-img-top {
-    ma
-  }
-
-  /* .save-confirmed{
-    right: 25px;
-  } */
-}
-
 @media screen and (max-width: 768px) {
   .save-confirmed{
     font-size: 14px;
@@ -157,5 +159,29 @@ body {
     max-width: 120px;
     margin: auto;
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card > a {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .card-body {
+    width: fit-content;
+    line-height: 2rem;
+    padding: 2rem;
+  }
+
+  p.clickable {
+    font-size: 1.2rem;
   }
 }
