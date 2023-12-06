@@ -88,10 +88,6 @@ body {
   margin: auto;
 }
 
-.images-container:first-child {
-  margin-top: 6rem;
-}
-
 body {
   line-height: 1.4rem;
   font-size: 0.9rem;
@@ -108,6 +104,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+}
+
+.cardr:first-child {
+  margin-top: 6rem;
 }
 
 .card:hover {
